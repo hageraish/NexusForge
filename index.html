@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NexusForge — AI-powered software, cloud platforms, and cybersecurity for ambitious teams." />
+  <title>NexusForge | Intelligent Software for Tomorrow</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="visually-hidden-focusable" href="#main">Skip to content</a>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar navbar-expand-lg fixed-top nf-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+        <span class="brand-mark" aria-hidden="true"><i class="bi bi-hexagon-fill"></i></span>
+        <span class="brand-text">Nexus<span>Forge</span></span>
+      </a>
+
+      <div class="d-flex align-items-center gap-2 order-lg-last">
+        <!-- Dark / Light theme toggle -->
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch to light mode">
+          <i class="bi bi-moon-stars-fill icon-moon" aria-hidden="true"></i>
+          <i class="bi bi-sun-fill icon-sun" aria-hidden="true"></i>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Clients</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-nf-primary btn-sm px-3" href="#contact">Get a Demo</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-orbs" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="orb orb-3"></span>
+      </div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5 gy-5">
+          <div class="col-lg-6">
+            <p class="hero-kicker">
+              <i class="bi bi-lightning-charge-fill"></i>
+              Next-generation engineering studio
+            </p>
+            <h1 class="hero-title">
+              Build products that <span class="gradient-text">think, scale,</span> and never sleep.
+            </h1>
+            <p class="hero-lead">
+              NexusForge designs AI platforms, cloud-native systems, and zero-trust security
+              for teams that ship at the speed of the market.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mt-4">
+              <a class="btn btn-nf-primary btn-lg" href="#contact">
+                Start a Project <i class="bi bi-arrow-right ms-1"></i>
+              </a>
+              <a class="btn btn-nf-ghost btn-lg" href="#features">Explore Platform</a>
+            </div>
+            <div class="hero-stats d-flex flex-wrap gap-4 mt-5">
+              <div>
+                <strong>120+</strong>
+                <span>Products shipped</span>
+              </div>
+              <div>
+                <strong>99.99%</strong>
+                <span>Uptime SLA</span>
+              </div>
+              <div>
+                <strong>40ms</strong>
+                <span>Global latency</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-panel">
+              <div class="panel-chrome">
+                <span></span><span></span><span></span>
+                <small>nexusforge://live-mesh</small>
+              </div>
+              <div class="panel-body">
+                <div class="code-line"><span class="kw">const</span> forge = <span class="fn">deploy</span>({</div>
+                <div class="code-line indent">runtime: <span class="str">"edge-ai"</span>,</div>
+                <div class="code-line indent">trust: <span class="str">"zero"</span>,</div>
+                <div class="code-line indent">scale: <span class="num">Infinity</span></div>
+                <div class="code-line">});</div>
+                <div class="pulse-row mt-4">
+                  <span class="pulse-dot"></span>
+                  Cluster healthy · 18 regions · 2.4M req/s
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Everything you need to ship intelligent software</h2>
+          <p class="section-sub mx-auto">
+            Modular products that plug into your stack — from model orchestration to
+            hardened infrastructure.
+          </p>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-cpu"></i></div>
+              <h3>Adaptive AI Layer</h3>
+              <p>Production-grade model routing, evals, and guardrails that keep agents accurate under load.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal delay-1">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-cloud-check"></i></div>
+              <h3>Cloud Mesh</h3>
+              <p>Multi-cloud Kubernetes, autoscaling, and observability wired for teams that cannot go down.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal delay-2">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-shield-lock"></i></div>
+              <h3>Zero-Trust Core</h3>
+              <p>Identity-aware access, secrets rotation, and runtime threat detection baked into every pipeline.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-diagram-3"></i></div>
+              <h3>API Fabric</h3>
+              <p>Graph and REST gateways with versioning, rate limits, and developer portals your partners love.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal delay-1">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-bar-chart-line"></i></div>
+              <h3>Realtime Insights</h3>
+              <p>Streaming analytics dashboards that turn telemetry into decisions in under a second.</p>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-4 reveal delay-2">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="bi bi-people"></i></div>
+              <h3>Product Squads</h3>
+              <p>Embedded engineers, designers, and researchers who ship with you — not a slide deck.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <div class="about-visual">
+              <div class="ring ring-a"></div>
+              <div class="ring ring-b"></div>
+              <div class="about-stat-card">
+                <i class="bi bi-globe2"></i>
+                <div>
+                  <strong>18 regions</strong>
+                  <span>Edge compute mesh</span>
+                </div>
+              </div>
+              <div class="about-stat-card card-b">
+                <i class="bi bi-rocket-takeoff"></i>
+                <div>
+                  <strong>4.8× faster</strong>
+                  <span>Time to production</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 reveal delay-1">
+            <p class="eyebrow">About us</p>
+            <h2>We forge software the way labs forge alloys — precise, resilient, and made to last.</h2>
+            <p class="about-copy">
+              Founded by platform engineers from high-growth SaaS companies, NexusForge
+              builds systems that stay calm when traffic, models, and markets all spike at once.
+            </p>
+            <ul class="about-list">
+              <li><i class="bi bi-check2-circle"></i> ISO 27001 and SOC 2 Type II controls</li>
+              <li><i class="bi bi-check2-circle"></i> Dedicated success engineers in every time zone</li>
+              <li><i class="bi bi-check2-circle"></i> Open-source SDKs for TypeScript, Python, and Go</li>
+            </ul>
+            <a class="btn btn-nf-primary mt-3" href="#contact">Talk to our architects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-head text-center reveal">
+          <p class="eyebrow">Trusted teams</p>
+          <h2>What product leaders say after launch</h2>
+        </div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4 reveal">
+            <blockquote class="quote-card">
+              <div class="stars" aria-label="5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>“They rebuilt our inference pipeline in six weeks. Latency dropped, and the board finally stopped asking about outages.”</p>
+              <footer>
+                <span class="avatar">AM</span>
+                <div>
+                  <strong>Ava Morales</strong>
+                  <span>CTO, HelixPay</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4 reveal delay-1">
+            <blockquote class="quote-card">
+              <div class="stars" aria-label="5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>“NexusForge felt like an internal platform team we never had. Clear architecture, ruthless execution.”</p>
+              <footer>
+                <span class="avatar">JK</span>
+                <div>
+                  <strong>Jonah Kim</strong>
+                  <span>VP Engineering, Orbit Labs</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="col-md-4 reveal delay-2">
+            <blockquote class="quote-card">
+              <div class="stars" aria-label="5 stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>“Security review used to take a quarter. Their zero-trust kit got us through enterprise procurement in days.”</p>
+              <footer>
+                <span class="avatar">SR</span>
+                <div>
+                  <strong>Sofia Rahman</strong>
+                  <span>CISO, Northwind Health</span>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Tell us what you want to ship next.</h2>
+            <p class="about-copy">
+              Share a brief and we will reply within one business day with a technical
+              outline — no slide theater.
+            </p>
+            <ul class="contact-meta">
+              <li><i class="bi bi-envelope"></i> hello@nexusforge.dev</li>
+              <li><i class="bi bi-geo-alt"></i> Austin · Berlin · Singapore</li>
+              <li><i class="bi bi-clock"></i> Support 24/7 for enterprise</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 reveal delay-1">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="name">Full name</label>
+                  <input class="form-control" id="name" name="name" type="text" required placeholder="Jordan Ellis" />
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="email">Work email</label>
+                  <input class="form-control" id="email" name="email" type="email" required placeholder="you@company.com" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="company">Company</label>
+                  <input class="form-control" id="company" name="company" type="text" placeholder="Acme Cloud" />
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="message">Project brief</label>
+                  <textarea class="form-control" id="message" name="message" rows="4" required
+                    placeholder="What are you building?"></textarea>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-nf-primary btn-lg w-100" type="submit">
+                    Send brief <i class="bi bi-send ms-1"></i>
+                  </button>
+                </div>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="mb-0">© 2026 NexusForge. Engineered for the next decade.</p>
+      <div class="d-flex gap-3 footer-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
